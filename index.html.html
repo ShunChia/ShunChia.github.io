@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>您的名字 - 您的專業</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans leading-normal text-gray-800 antialiased">
+
+<header class="container mx-auto py-12">
+    <div class="flex flex-wrap items-center justify-between">
+        <div class="w-full md:w-1/2">
+            <h1 class="text-5xl font-bold mb-4">張三</h1>
+            <h2 class="text-2xl font-medium mb-6">軟體工程師</h2>
+            <p class="text-lg mb-6">擁有超過10年的軟體開發經驗，專精於前端和後端技術，包括React, Node.js等。</p>
+            <a href="mailto:yourname@example.com" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">聯絡我</a>
+        </div>
+        <div class="w-full md:w-1/2">
+            <img src="https://shunchia.github.io/S__81829895.jpg" alt="張三" class="w-full rounded-lg shadow-lg">
+        </div>
+    </div>
+</header>
+
+<main class="container mx-auto py-12">
+    <section class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/2 px-4 mb-8">
+            <h3 class="text-3xl font-bold mb-4">關於我</h3>
+            <p class="text-lg mb-6">詳細介紹您的背景、經歷及成就，例如成功項目、技術專長、團隊合作經驗等。</p>
+            <a href="#portfolio" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">查看我的作品</a>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mb-8">
+            <h3 class="text-3xl font-bold mb-4">我的服務</h3>
+            <ul class="list-disc pl-6 mb-6">
+                <li>網站開發與設計</li>
+                <li>後端系統建置</li>
+                <li>產品規劃與諮詢</li>
+            </ul>
+            <a href="mailto:yourname@example.com" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">瞭解更多</a>
+        </div>
+    </section>
+    <section id="portfolio" class="py-12">
+        <h3 class="text-3xl font-bold mb-4">我的作品</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 每個作品項目 -->
+            <!-- 請根據您的作品重複下面的結構 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="your-project-image-url.jpg" alt="項目名稱" class="w-full rounded-lg mb-4">
+                <h4 class="text-xl font-bold mb-2">項目名稱</h4>
+                <p class="text-gray-600 mb-4">項目描述。</p>
+                <a href="project-link" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">查看項目</a>
+            </div>
+            <!-- 作品項目結束 -->
+        </div>
+    </section>
+    <section class="py-12">
+        <h3 class="text-3xl font-bold mb-4">聯絡我</h3>
+        <form action="your-server-side-script" method="post" class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">姓名</label>
+                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-4 py-2" required>
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">電郵</label>
+                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-4 py-2" required>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">訊息</label>
+                <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">發送訊息</button>
+        </form>
+    </section>
+</main>
+
+<footer class="container mx-auto py-12 text-center">
+    <p class="text-gray-600">&copy; 2021 張三. 版權所有。</p>
+</footer>
+
+</body>
+</html>
